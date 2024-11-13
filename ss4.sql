@@ -16,7 +16,7 @@ SELECT * FROM building
 WHERE cost <(SELECT MAX(cost) FROM building);
 
 SELECT * FROM building
-WHERE cost > ALL (
+WHERE cost >   (
 SELECT cost FROM building
 WHERE city='ha noi');
 

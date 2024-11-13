@@ -33,3 +33,15 @@ WHERE ProductID = 2;
 UPDATE Suppliers
 SET SupplierName ='Supplier D'
 WHERE SupplierID = 1;
+
+
+DELETE FROM Suppliers
+WHERE SupplierID = 3;
+
+DELETE FROM Products
+WHERE ProductID = 4;
+
+SELECT p.*, s.*
+FROM Products p 
+JOIN Suppliers s ON p.SupplierID = s.SupplierID;
+GROUP BY p.ProductID;

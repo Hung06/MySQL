@@ -35,3 +35,4 @@ SELECT * From OrderDetails;
 CREATE INDEX CustomerID_index ON Oders (CustomerID);
 
 CREATE INDEX OrderID_index ON OrderDetails (OrderID);
+//
